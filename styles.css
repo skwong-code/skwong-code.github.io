@@ -174,7 +174,7 @@ body {
 .info { 
   grid-area: info; 
   margin: auto;
-  font-family:Calibri;
+  font-family: Brush Script MT;
   font-size: 75%;
   top: auto;
   color: white;
@@ -201,7 +201,7 @@ body {
 .project { 
   grid-area: project; 
   text-align: center;
-  font-family:cursive
+  font-family:Brush Script MT
 }
 .PacMen {
    grid-area: PacMen; 
@@ -227,7 +227,7 @@ body {
 .Contact { 
   grid-area: Contact; 
   text-align: center;
-  font-family:cursive;
+  font-family:Brush Script MT;
 
 }
 .linkedIn {
@@ -256,4 +256,11 @@ body {
     font-size: 16px;
   }
   .button:hover {background-color: #55c058}
+  
+  .bio { 
+    grid-area: bottom; 
+    background-color:rgb(39, 126, 153);
+    font-family:Calibri;
+    color: white;
+    font-size: 25px;
   
