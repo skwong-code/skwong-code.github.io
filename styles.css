@@ -73,7 +73,7 @@
 body {
   width: 99%;
   padding: 0;
-  background: white;
+  background-color: rgb(26, 188, 156)
 }
 
 
@@ -84,7 +84,11 @@ body {
 }
 
 .daVideo {
-  margin: 0 auto;
+  margin-left: 20px;
+  align-content: left;
+  padding: 20px;
+  align-items: left;
+  float: left;
   max-width: 1000px;
   width: 100%;
 }
@@ -105,6 +109,82 @@ body {
 .videoTxt {
   font-size: .75rem;
   margin-left: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "top top top top"
+    "middle middle middle middle"
+    "bottom bottom bottom bottom";
+}
+
+.top { 
+  
+  grid-area: top;  
+  background-color: rgb(26, 188, 156); 
+ /* background-image: url(./images/robert-murray-toCqTyxsT4Q-unsplash.jpg);*/
+
+}
+
+.middle { grid-area: middle;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  background-color:green;
+
+}
+
+.bottom { 
+  grid-area: bottom; 
+  background-color:white;
+
+}
+.topGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "leftside avatar avatar avatar rightside"
+    "leftside avatar avatar avatar rightside"
+    "leftside name name name rightside"
+    "leftside info info info rightside";
+}.avatar { 
+  grid-area: avatar; 
+  margin: auto;
+  top: 20px;
+}
+
+.name { 
+  grid-area: name; 
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family:Calibri;
+
+}
+.info { 
+  grid-area: info; 
+  margin: auto;
+  font-family:Calibri;
+  font-size: 75%;
+  top: auto;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+
+
+}
+.leftside { grid-area: leftside; }
+.rightside { grid-area: rightside; }
+
+
+
+
 }
 
 
