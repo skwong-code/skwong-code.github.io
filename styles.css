@@ -73,7 +73,7 @@
 body {
   width: 99%;
   padding: 0;
-  background-color: rgb(26, 188, 156)
+  background-color: rgb(39, 126, 153)
 }
 
 
@@ -106,9 +106,11 @@ body {
   height: 100%;
 }
 
-.videoTxt {
+.vidTxt {
   font-size: .75rem;
   margin-left: 10px;
+  color: white;
+  font-family:Calibri;
 }
 
 .grid-container {
@@ -123,9 +125,8 @@ body {
 }
 
 .top { 
-  
   grid-area: top;  
-  background-color: rgb(26, 188, 156); 
+  background-color:rgb(39, 126, 153)
  /* background-image: url(./images/robert-murray-toCqTyxsT4Q-unsplash.jpg);*/
 
 }
@@ -134,13 +135,16 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   width: 100%;
-  background-color:green;
+  background-color: rgb(39, 126, 153);
 
 }
 
 .bottom { 
   grid-area: bottom; 
   background-color:white;
+  font-family:Calibri;
+  text-indent: 50px;
+  font-size: 50px;
 
 }
 .topGrid {
@@ -183,9 +187,73 @@ body {
 .rightside { grid-area: rightside; }
 
 
-
+.bottom-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "project project project project project"
+    ". PacMen Eyes Bus ."
+    "Contact Contact Contact Contact Contact"
+    ". linkedIn Twitter . .";
+}
+.project { 
+  grid-area: project; 
+  text-align: center;
+  font-family:cursive
+}
+.PacMen {
+   grid-area: PacMen; 
+   font-size: auto;
+   margin: 0 auto;
+   width: 100%;
+   height: 100%;
+  }
+.Eyes { 
+  grid-area: Eyes; 
+  font-size: auto;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.Bus { 
+  grid-area: Bus;
+  font-size: auto;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.Contact { 
+  grid-area: Contact; 
+  text-align: center;
+  font-family:cursive;
 
 }
+.linkedIn {
+   grid-area: linkedIn; 
+   font-size: auto;
+   margin: 0 auto;
+   width: 100%;
+   height: 100%;
+  }
+.Twitter {
+   grid-area: Twitter; 
+   font-size: auto;
+   margin: 0 auto;
+   width: 100%;
+   height: 100%;
+  }
 
-
-
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .button:hover {background-color: #55c058}
+  
